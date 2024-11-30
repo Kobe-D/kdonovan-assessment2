@@ -5,7 +5,7 @@ public class Person {
     private String gender; 
 
 // constructor
-    public Persons(){
+    public Person(){
         this.name = "ENTER NAME";
         this.contactdetails = "ENTER CONTACT";
         this.gender = "enter gender";
