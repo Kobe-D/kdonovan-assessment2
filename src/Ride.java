@@ -59,12 +59,14 @@ public void displayInfor(){
 
 
 public interface Rideinterface{
-    void addVisitortoQueue();
-    void removeVisitorfromQueue();
+    void addVisitortoQueue(Visitor visitor);
+    void removeVisitorfromQueue(Visitor visitor);
     void printQueue();
     void runOneCycle();
-    void addVisitorToHistory();
-    
+    void addVisitorToHistory(Visitor visitor);
+    boolean checkVisitorfromHistory(Visitor visitor);
+    int numberofVisitors();
+    void printRideHistory();
 
 
 }   
