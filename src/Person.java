@@ -6,9 +6,9 @@ public abstract class Person {
 
 // constructor
 public Person(){
-    this.name = "ENTER NAME";
-    this.mobile = "ENTER CONTACT";
-    this.gender = "enter gender";
+    this.name = "name";
+    this.mobile = "contact";
+    this.gender = "gender";
     
     }
 // making parameter fr constructor 
