@@ -44,5 +44,16 @@ public void setOpen(boolean isOpen){
 public void setLength(int length) {
     this.length = length;
 }
-    
+   
+// adding a print method to print information for ride class
+public void displayInfor(){
+    System.out.println(rideName);
+    if (operator != null){
+        System.out.println("Assigned operator: " + operator.getName());
+    } else {
+        System.out.println("No assigned operator yet");
+    }
+    System.out.println();
+    System.out.println();
+}
 }
