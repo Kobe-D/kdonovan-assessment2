@@ -56,4 +56,17 @@ public void displayInfor(){
     System.out.println("Ride lenght: " + length + "minutes");
     System.out.println("Is open: " + isOpen);
 }
+
+
+public interface Rideinterface{
+    void addVisitortoQueue();
+    void removeVisitorfromQueue();
+    void printQueue();
+    void runOneCycle();
+    void addVisitorToHistory();
+    
+
+
+}   
+
 }
