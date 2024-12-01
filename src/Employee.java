@@ -36,7 +36,13 @@ public void setUID(String uID) {
     this.uID = uID;
 }
 
+//overide method so the employee class can communicate to Person class 
+//this was used in the last assessment under the recomendation of gen AI
+//so i will still refer to the @overide code being Ai generated. 
+@Override
 
+public void displayInfo() {
 
+}
 
 }
