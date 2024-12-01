@@ -20,6 +20,21 @@ public Employee(String name, String mobile, String gender, String role, String u
 }
 // implementing getters and setter 
 
+public String getRole() {
+    return role; 
+}
+
+public String getUID() {
+    return uID;
+}
+
+public String setRole(String role) {
+    this.role = role;
+}
+
+public String setUID(String uID) {
+    this.uID = uID;
+}
 
 
 
