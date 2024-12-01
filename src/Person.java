@@ -1,21 +1,20 @@
 public abstract class Person {
 //Add at least 3 instance variables suitable for a person
     private String name;
-    private String contactdetails;
+    private String mobile;
     private String gender; 
 
 // constructor
     public Person(){
         this.name = "ENTER NAME";
-        this.contactdetails = "ENTER CONTACT";
+        this.mobile = "ENTER CONTACT";
         this.gender = "enter gender";
     
     }
 // making parameter fr constructor 
-
-    public Person(String name, String contactdetails, String gender) {
+    public Person(String name, String mobile, String gender) {
         this.name = name;
-        this.contactdetails = contactdetails;
+        this.mobile = mobile; //( Mobile phone numbers are not stored as integers, as the integer data type holds values that have the potential to be used in calculations.)
         this.gender = gender;
     }
 // setting up the getters for variables 
@@ -24,13 +23,27 @@ public abstract class Person {
         return name;
     }
 
-    public String getContactdetails(){
-        return contactdetails;
+    public String getmobile(){
+        return mobile;
     }
 
     public String getGender(){
         return gender;
     }
+
+
+    // implementing setters
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setmobile(String mobile){
+        this.mobile = mobile;
+    }
+
+
+
+
 
 // method for displaying information from subclasses 
 public abstract void displayInfo();
