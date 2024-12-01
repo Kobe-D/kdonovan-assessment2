@@ -9,7 +9,7 @@ public Employee(){
 //call constuctor from parent class (Person)
 super();
 this.role = "role";
-this.uID = "uDI";
+this.uID = "uID";
 
 
 }
