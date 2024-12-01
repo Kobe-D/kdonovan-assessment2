@@ -1,4 +1,4 @@
-public class Person {
+public abstract class Person {
 //Add at least 3 instance variables suitable for a person
     private String name;
     private String contactdetails;
@@ -32,6 +32,7 @@ public class Person {
         return gender;
     }
 
-
+// method for displaying information from subclasses 
+public abstract void displayInfo();
 
 }
