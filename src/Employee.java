@@ -42,7 +42,7 @@ public void setUID(String uID) {
 @Override
 
 public String toString() {  //to string allows a better formatted employee output
-    return "Employee: " + uID + getName()"," + getMobile()"," + getGender()"," + role;
+    return "Employee: " + uID + ", " + getName() + ", " + getMobile() + ", " + getGender() + ", " + role;
 }
 
 }
