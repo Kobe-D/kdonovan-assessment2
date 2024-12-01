@@ -21,14 +21,32 @@ public Visitor(String name, String mobile, String gender, boolean familyGroup, b
     this.adult = adult;
     this.ticketnumber = ticketnumber;
     this.student = student;
-
 }
-
-
-
-
-
-
+// getters and setters
+public boolean familyGroup(){
+    return familyGroup;
+}
+public boolean adult(){
+    return adult;
+}
+public String getTicknumber(){
+    return ticketnumber;
+}
+public boolean student(){
+    return student;
+}
+public void familyGroup(boolean familyGroup){
+    this.familyGroup = familyGroup;
+}
+public void adult(boolean adult){
+    this.adult = adult;
+}
+public void setTicketnumber(String ticketnumber){
+    this.ticketnumber = ticketnumber;
+}
+public void student(boolean student){
+    this.student = student;
+}
 
 
 
