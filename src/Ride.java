@@ -18,8 +18,31 @@ public Ride(String rideName, Employee operator, boolean isOpen, int length){
     this.isOpen = isOpen;
     this.length = length;
 }
-//getters amd setters 
+//getters and setters 
+public String getRideName(){
+    return rideName;
+}
+public Employee getOperator(){
+    return operator;
+}
+public boolean isOpen(){
+    return isOpen;
+}
+public int getlenght(){
+    return length;
+}
+public void setRideNames(String rideName) {
+    this.rideName = rideName;
+}
 
-
+public void setOperator(Employee operator) {
+    this.operator = operator;
+}
+public void setOpen(boolean isOpen){
+    this.isOpen = isOpen;
+}
+public void setLength(int length) {
+    this.length = length;
+}
     
 }
