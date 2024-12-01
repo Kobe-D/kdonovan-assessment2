@@ -23,7 +23,7 @@ public String getName(){
     return name;
 }
 
-public String getmobile(){
+public String getMobile(){
     return mobile;
 }
 

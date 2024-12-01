@@ -41,8 +41,8 @@ public void setUID(String uID) {
 //so i will still refer to the @overide code being Ai generated. 
 @Override
 
-public void displayInfo() {
-
+public String toString() {  //to string allows a better formatted employee output
+    return "Employee: " + uID + getName()"," + getMobile()"," + getGender()"," + role;
 }
 
 }
