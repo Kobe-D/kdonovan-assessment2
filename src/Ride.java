@@ -53,7 +53,7 @@ public void displayInfor(){
     } else {
         System.out.println("No assigned operator yet");
     }
-    System.out.println();
-    System.out.println();
+    System.out.println("Ride lenght: " + length + "minutes");
+    System.out.println("Is open: " + isOpen);
 }
 }
