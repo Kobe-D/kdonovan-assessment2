@@ -11,6 +11,14 @@ public Employee(){
     this.role = "role";
     this.uID = "uID";
 }
+// set up the paremters for consturcor
+public Employee(String name, String mobile, String gender, String role, String uID){
+    super(name, mobile, gender);
+    this.role = role;
+    this.uID = uID;
+
+}
+// implementing getters and setter 
 
 
 
