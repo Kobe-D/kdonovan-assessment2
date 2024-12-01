@@ -47,7 +47,11 @@ public void setTicketnumber(String ticketnumber){
 public void student(boolean student){
     this.student = student;
 }
-
+// overide method
+@Override 
+public void displayInfo(){
+    System.out.println("Visitor Information: " + getName() + ", " + getMobile() + ", " + getGender() + ", " + getTicknumber() +  ", in a Family gorup: " + familyGroup + ", is an Adult: " + adult + "Studen ticket: " + student);
+}
 
 
 
