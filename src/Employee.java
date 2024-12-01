@@ -28,11 +28,11 @@ public String getUID() {
     return uID;
 }
 
-public String setRole(String role) {
+public void setRole(String role) {
     this.role = role;
 }
 
-public String setUID(String uID) {
+public void setUID(String uID) {
     this.uID = uID;
 }
 
