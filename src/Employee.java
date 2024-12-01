@@ -7,11 +7,9 @@ public class Employee extends Person{
 //constructor 
 public Employee(){
 //call constuctor from parent class (Person)
-super();
-this.role = "role";
-this.uID = "uID";
-
-
+    super();
+    this.role = "role";
+    this.uID = "uID";
 }
 
 
