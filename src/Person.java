@@ -5,46 +5,44 @@ public abstract class Person {
     private String gender; 
 
 // constructor
-    public Person(){
-        this.name = "ENTER NAME";
-        this.mobile = "ENTER CONTACT";
-        this.gender = "enter gender";
+public Person(){
+    this.name = "ENTER NAME";
+    this.mobile = "ENTER CONTACT";
+    this.gender = "enter gender";
     
     }
 // making parameter fr constructor 
-    public Person(String name, String mobile, String gender) {
-        this.name = name;
-        this.mobile = mobile; //( Mobile phone numbers are not stored as integers, as the integer data type holds values that have the potential to be used in calculations.)
-        this.gender = gender;
-    }
+public Person(String name, String mobile, String gender) {
+    this.name = name;
+    this.mobile = mobile; //( Mobile phone numbers are not stored as integers, as the integer data type holds values that have the potential to be used in calculations.)
+    this.gender = gender;
+}
 // setting up the getters for variables 
 
-    public String getName(){
-        return name;
-    }
+public String getName(){
+    return name;
+}
 
-    public String getmobile(){
-        return mobile;
-    }
+public String getmobile(){
+    return mobile;
+}
 
-    public String getGender(){
-        return gender;
-    }
-
+public String getGender(){
+    return gender;
+}
 
     // implementing setters
-    public void setName(String name) {
-        this.name = name;
-    }
+public void setName(String name) {
+    this.name = name;
+}
 
-    public void setmobile(String mobile){
-        this.mobile = mobile;
-    }
+public void setmobile(String mobile){
+    this.mobile = mobile;
+}
 
-
-
-
-
+public void setGender(String gender){
+    this.gender = gender;
+}
 // method for displaying information from subclasses 
 public abstract void displayInfo();
 
