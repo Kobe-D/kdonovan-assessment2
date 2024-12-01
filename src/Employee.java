@@ -16,7 +16,6 @@ public Employee(String name, String mobile, String gender, String role, String u
     super(name, mobile, gender);
     this.role = role;
     this.uID = uID;
-
 }
 // implementing getters and setter 
 public String getRole() {
@@ -42,9 +41,7 @@ public void displayInfo() {
     // add a method to display the employee info
     System.out.println("Employee Info: " + getName() + ", " + getRole() + ", " + getUID());
 }
-
 @Override
-
 public String toString() {  //to string allows a better formatted employee output
     return "Employee Info: " + uID + ", " + getName() + ", " + getMobile() + ", " + getGender() + ", " + role;
 }
