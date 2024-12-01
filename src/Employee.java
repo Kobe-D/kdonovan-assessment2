@@ -3,7 +3,16 @@
 public class Employee extends Person{
     //making employee class unique vairables
     private String role;
-    private String
+    private String uID;
+//constructor 
+public Employee(){
+//call constuctor from parent class (Person)
+super();
+this.role = "role";
+this.uID = "uDI";
+
+
+}
 
 
 
