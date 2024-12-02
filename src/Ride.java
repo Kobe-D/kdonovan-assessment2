@@ -57,7 +57,7 @@ public void displayInfor(){
     System.out.println("Is open: " + isOpen);
 }
 
-
+//part 2
 public interface Rideinterface{
     void addVisitortoQueue(Visitor visitor);
     void removeVisitorfromQueue(Visitor visitor);
