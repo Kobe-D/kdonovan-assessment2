@@ -7,7 +7,7 @@ public class AssignmentTwo {
     Ride ride1 = new Ride("Ride 1", null, true, 3);
 
 // creating a list of visitors 
-                        //name  number   generder
+                        
     Visitor v001 = new Visitor("Tame Impala", "0444444444", "Male", false, true, false, "T0001");
     Visitor v002 = new Visitor("Kurt Cobain", "0477777777", "Male", true, true, false, "T0002");
     Visitor v003 = new Visitor("Jordan Carter", "066666666", "Male", false, true, true, "T0003");
