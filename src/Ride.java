@@ -122,16 +122,6 @@ public void printQueue(){
 }
 
 
-
-
-
-
-
-
-
-
-
-
 @Override
 public void runOneCycle() {
 // part 5 implemnation
@@ -139,7 +129,15 @@ public void runOneCycle() {
 
 @Override
 public void addVisitorToHistory(Visitor visitor) {
+    if (historySize < rideHistory.length) {
+        rideHistory[historySize++] = visitor;
+        System.out.println(visitor.getName() + " Visitor can now be seen in ride history " );
+    } else {
+        System.out.println("Sorry history is currently full, addition entries cannot be made at this time " + visitor.getName() + " has failed to be added ");
+    }
 }
+
+
 
 @Override
 public boolean checkVisitorfromHistory(Visitor visitor) {
