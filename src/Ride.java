@@ -93,8 +93,6 @@ public void addVisitortoQueue(Visitor visitor) {
 
 
 
-}
-
 @Override 
 public void removeVisitorfromQueue(Visitor visitor) {
 // part 3 implementation
