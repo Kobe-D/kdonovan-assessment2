@@ -6,9 +6,15 @@ public class Ride implements Rideinterface {
     private int length;
 
 //part 3 stating visitor queue variables
-private Visitor[] queue;
-private int queueSize;
-private final int maxQueueSize = 56; // setting the max queue size as double what the avg roller coaster rides seat is ( according to asking chatgpt : :"whats the average of how many seats are on a roller coaster" )
+    private Visitor[] queue;
+    private int queueSize;
+    private final int maxQueueSize = 56; // setting the max queue size as double what the avg roller coaster rides seat is ( according to asking chatgpt : :"whats the average of how many seats are on a roller coaster" )
+
+//part 3 stating ride history variables
+    private Visitor[] rideHistory;
+    private int historySize;
+
+
 
 
 //constructor   
