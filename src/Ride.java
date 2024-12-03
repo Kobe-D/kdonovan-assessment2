@@ -89,7 +89,6 @@ public void addVisitortoQueue(Visitor visitor) {
        }
 } 
 
-
 @Override 
 public void removeVisitorfromQueue(Visitor visitor) {
 // part 3 implementation
@@ -111,13 +110,19 @@ public void removeVisitorfromQueue(Visitor visitor) {
         System.out.println(visitor.getName() + " is no longer in the queue");
     }
 }
-
-
 @Override
 public void printQueue(){
     //part 3 implemnation
-}
+    System.out.println(" The current queue for " + rideName + "");
+    if (queueSize == 0) {
+        System.out.println("this queue is currently empty");
+    } else {
+        for (int i = 0; i < queueSize; i++) {
+            System.out.println(" " + queue[i].getName());
 
+        }
+    }
+}
 @Override
 public void runOneCycle() {
 // part 5 implemnation
