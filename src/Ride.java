@@ -4,6 +4,13 @@ public class Ride implements Rideinterface {
     private Employee operator;
     private boolean isOpen;
     private int length;
+
+//part 3 stating visitor queue variables
+private Visitor[] queue;
+private int queueSize;
+private final int maxQueueSize = 56; // setting the max queue size as double what the avg roller coaster rides seat is ( according to asking chatgpt : :"whats the average of how many seats are on a roller coaster" )
+
+
 //constructor   
 public Ride(){
     this.rideName = "ride name";
