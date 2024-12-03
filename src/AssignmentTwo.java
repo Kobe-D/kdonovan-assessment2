@@ -8,8 +8,8 @@ public class AssignmentTwo {
 
 // creating a list of visitors 
                         //name  number   generder
-    Visitor v001 = Visitor("Tame Impala", "0444444444", "Male", false, true, false, "T0001");
-    Visitor v002 = Visitor("Kurt Cobain", "0477777777", "Male", true, true, false, "T0002");
+    Visitor v001 = new Visitor("Tame Impala", "0444444444", "Male", false, true, false, "T0001");
+    Visitor v002 = new Visitor("Kurt Cobain", "0477777777", "Male", true, true, false, "T0002");
 
 
 
