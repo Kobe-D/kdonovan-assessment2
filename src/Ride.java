@@ -58,11 +58,8 @@ public void displayInfor(){
     System.out.println("Is open: " + isOpen);
 }
 
-
-
 // updating ride file for part 2 
 //implementing methods for rideinterface  ( will be continued on in further parts)
-
 @Override
 public void addVisitortoQueue(Visitor visitor) {
 // part 3 implementation
@@ -93,5 +90,15 @@ public boolean checkVisitorfromHistory(Visitor visitor) {
     return false; 
 }
 
+@Override
+public int numberofVisitors(){
+//part 4 implementation 
+    return 0;
+}
+
+@Override
+public void printRideHistory(){
+// part 4 implementation 
+}
 
 }
