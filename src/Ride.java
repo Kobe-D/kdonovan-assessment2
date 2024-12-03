@@ -30,6 +30,11 @@ public Ride(String rideName, Employee operator, boolean isOpen, int length){
     this.operator = operator;
     this.isOpen = isOpen;
     this.length = length;
+//part 3 initialise my queues and history  as arrays
+    this.queue = new Visitor[maxQueueSize];
+    this.queueSize = 0;
+    this.rideHistory = new Visitor[1000];
+    this.historySize = 0;
 }
 //getters and setters 
 public String getRideName(){
