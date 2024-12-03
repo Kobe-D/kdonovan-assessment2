@@ -48,6 +48,7 @@ public void setLength(int length) {
 // adding a print method to print information for ride class
 public void displayInfor(){
     System.out.println(rideName);
+// if else statmen to either print employye assigned name or say if no ones has been assigned yet
     if (operator != null){
         System.out.println("Assigned operator: " + operator.getName());
     } else {
