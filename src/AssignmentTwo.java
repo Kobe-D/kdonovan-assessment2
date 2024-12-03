@@ -36,7 +36,7 @@ public class AssignmentTwo {
     ride1.removeVisitorfromQueue(v001);
     
 // pring method 
-ride1.printQueue();
+    ride1.printQueue();
 
     }
 

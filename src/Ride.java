@@ -96,7 +96,7 @@ public void removeVisitorfromQueue(Visitor visitor) {
     for (int i = 0; i < queueSize; i++) {
         if (queue[i].equals(visitor)) {
             found = true;
-            for ( int x = x; x < queueSize - 1; x++) {
+            for ( int x = i; x < queueSize - 1; x++) {
                 queue[x] = queue[x + 1];
             }
             //reducing size of queue and clearing the last one 
