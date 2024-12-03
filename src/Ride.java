@@ -14,9 +14,6 @@ public class Ride implements Rideinterface {
     private Visitor[] rideHistory;
     private int historySize;
 
-
-
-
 //constructor   
 public Ride(){
     this.rideName = "ride name";

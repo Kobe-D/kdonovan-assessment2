@@ -25,7 +25,6 @@ public class AssignmentTwo {
     ride1.addVisitortoQueue(v007);
     ride1.addVisitortoQueue(v006);
     ride1.addVisitortoQueue(v005);
-    ride1.addVisitortoQueue(v005);
     ride1.addVisitortoQueue(v004);
     ride1.addVisitortoQueue(v003);
     ride1.addVisitortoQueue(v002);
@@ -38,7 +37,7 @@ public class AssignmentTwo {
 // pring method 
     ride1.printQueue();
 
-    }
+ }
 
     public void partFourA(){
     }
