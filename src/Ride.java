@@ -1,5 +1,5 @@
 //The Ride class is used to track the rides available at the theme park, e.g., roller coaster, water riders, etc.
-public class Ride {
+public class Ride implements Rideinterface {
     private String rideName;
     private Employee operator;
     private boolean isOpen;
@@ -56,6 +56,41 @@ public void displayInfor(){
     }
     System.out.println("Ride lenght: " + length + "minutes");
     System.out.println("Is open: " + isOpen);
+}
+
+
+
+// updating ride file for part 2 
+//implementing methods for rideinterface  ( will be continued on in further parts)
+
+@Override
+public void addVisitortoQueue(Visitor visitor) {
+// part 3 implementation
+}
+
+@Override 
+public void removeVisitorfromQueue(Visitor visitor) {
+// part 3 implementation
+}
+
+@Override
+public void printQueue(){
+    //part 3 implemnation
+}
+
+@Override
+public void runOneCycle() {
+// part 5 implemnation
+}
+
+@Override
+public void addVisitorToHistory(Visitor visitor) {
+}
+
+@Override
+public boolean checkVisitorfromHistory(Visitor visitor) {
+// part 4 implementation 
+    return false; 
 }
 
 
