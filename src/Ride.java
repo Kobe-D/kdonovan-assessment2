@@ -90,13 +90,28 @@ public void addVisitortoQueue(Visitor visitor) {
 } 
 
 
-
-
-
 @Override 
 public void removeVisitorfromQueue(Visitor visitor) {
 // part 3 implementation
+    boolean found = false;
+    for (int i = 0; i < queueSize; i++) {
+        if (queue[i].equals(visitor)) {
+            found = true;
+            for ( int x = x; x < queueSize - 1; x++) {
+                queue[x] = queue[x + 1];
+            }
+            //reducing size of queue and clearing the last one 
+            queue[--queueSize] = null;
+            System.out.println(visitor.getName() + " Visitor has succesfully been removed from the queue ");
+            break;
+
+        }
+    }
+    if (!found) {
+        System.out.println(visitor.getName() + " is no longer in the queue");
+    }
 }
+
 
 @Override
 public void printQueue(){
