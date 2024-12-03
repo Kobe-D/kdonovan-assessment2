@@ -81,6 +81,18 @@ public void displayInfor(){
 @Override
 public void addVisitortoQueue(Visitor visitor) {
 // part 3 implementation
+    if (queueSize < maxQueueSize) {
+        queue[queueSize++] = visitor;
+        System.out.println(visitor.getName() + " has joined the queue!!");
+    } else {
+        System.out.println("Sorry were full " + visitor.getName() + " cannot be added to the queue at this time :( " );
+       }
+} 
+
+
+
+
+
 }
 
 @Override 
