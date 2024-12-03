@@ -6,8 +6,7 @@ public class AssignmentTwo {
     //making new ride
     Ride ride1 = new Ride("Ride 1", null, true, 3);
 
-// creating a list of visitors 
-                        
+// creating a list of visitors                         
     Visitor v001 = new Visitor("Tame Impala", "0444444444", "Male", false, true, false, "T0001");
     Visitor v002 = new Visitor("Kurt Cobain", "0477777777", "Male", true, true, false, "T0002");
     Visitor v003 = new Visitor("Jordan Carter", "066666666", "Male", false, true, true, "T0003");
@@ -19,9 +18,25 @@ public class AssignmentTwo {
     Visitor v009 = new Visitor("Jessica Rabbit", "098527368", "Female", false, false, false, "T0009");
     Visitor v010 = new Visitor("Jade Pirf", "416468314", "Female", true, true, true, "T0010");
     
-
-
-
+// putting visitors in the queue 
+    ride1.addVisitortoQueue(v010);
+    ride1.addVisitortoQueue(v009);
+    ride1.addVisitortoQueue(v008);
+    ride1.addVisitortoQueue(v007);
+    ride1.addVisitortoQueue(v006);
+    ride1.addVisitortoQueue(v005);
+    ride1.addVisitortoQueue(v005);
+    ride1.addVisitortoQueue(v004);
+    ride1.addVisitortoQueue(v003);
+    ride1.addVisitortoQueue(v002);
+    ride1.addVisitortoQueue(v001);
+//removing from queue
+    ride1.removeVisitorfromQueue(v005);
+    ride1.removeVisitorfromQueue(v008);
+    ride1.removeVisitorfromQueue(v001);
+    
+// pring method 
+ride1.printQueue();
 
     }
 
