@@ -142,18 +142,33 @@ public void addVisitorToHistory(Visitor visitor) {
 @Override
 public boolean checkVisitorfromHistory(Visitor visitor) {
 // part 4 implementation 
-    return false; 
+for (int i = 0; i < historySize; i++) {
+    if (rideHistory[i].equals(visitor)){
+// if visitor is found in the history 
+        return true; 
+    }
+}
+// if they arnt found in the history 
+return false; 
 }
 
 @Override
 public int numberofVisitors(){
 //part 4 implementation 
-    return 0;
+    return historySize;
 }
 
 @Override
 public void printRideHistory(){
 // part 4 implementation 
+    System.out.println("List of prevous rider " + rideName + " : ");
+    if ( historySize == 0) {
+        System.out.println("Currentyly no visitor history for this ride");
+    } else {
+        for (int i = 0; i < historySize; i++) {
+            System.out.println("Visitor " + (i + 1) + rideHistory[i].getName());
+        }
+    }
 }
 
 }
