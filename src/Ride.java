@@ -13,6 +13,9 @@ public class Ride implements Rideinterface {
     private Visitor[] queue;
     private int queueSize;
     private final int maxQueueSize = 56; // setting the max queue size as double what the avg roller coaster rides seat is ( according to asking chatgpt : :"whats the average of how many seats are on a roller coaster" )
+//PART 5
+    private int maxRider; // max visitors on the ride
+    private int numOfCycles; // # of times ride has been run
 
 //part 4 Guidence from GenAI(chatgpt) for linked list
     private LinkedList<Visitor> rideHistory;
@@ -22,6 +25,10 @@ public Ride(){
     this.operator = null; 
     this.isOpen = false;
     this.length = 0;
+    this.maxRider = 5;
+    this.numOfCycles = 0;
+
+    
 }
 //setting parameters 
 public Ride(String rideName, Employee operator, boolean isOpen, int length){
@@ -35,6 +42,9 @@ public Ride(String rideName, Employee operator, boolean isOpen, int length){
     // help with GenAi for part4A
     this.rideHistory = new LinkedList<>();
 }
+
+
+
 //getters and setters 
 public String getRideName(){
     return rideName;
@@ -60,6 +70,16 @@ public void setOpen(boolean isOpen){
 }
 public void setLength(int length) {
     this.length = length;
+}
+//Part 5
+public int getMaxRider(){
+    return maxRider;
+}
+public void setMaxRider(int maxRider) {
+    this.maxRider = maxRider;
+}
+public void setNumOfCycles(int numOfCycles) {
+    this.numOfCycles = numOfCycles;
 }
    
 // adding a print method to print information for ride class
@@ -126,13 +146,36 @@ public void printQueue(){
 @Override
 public void runOneCycle() {
 // part 5 implemnation
+if (operator == null) {
+    System.out.println("no operator assigned. The ride cannot run ");
+    return;
 }
+
+if (queueSize == 0) {
+    System.out.println("no visitors in the queue. No need to run the ride ");
+    return;
+}
+
+// check how much visitors can fit on one ride 
+int ridersToTake = Math.min(queueSize, maxRider);
+
+System.out.println(" the " + (numOfCycles + 1) + " cycle is about to begin ");
+for (int i = 0; i < ridersToTake; i++) {
+    Visitor visitor = queue[i];
+    addVisitorToHistory(visitor);
+    removeVisitorfromQueue(visitor);
+}
+// counting the cycles 
+numOfCycles++; 
+System.out.println("Cycle " + numOfCycles + " has been completed !!");
+}
+    
 
 @Override
 public void addVisitorToHistory(Visitor visitor) {
     // part 4 implementation
     rideHistory.add(visitor); 
-    System.out.println(visitor.getName() + " has been added to the ride history.");
+    System.out.println(visitor.getName() + " has been added to the ride history");
 }
 
 @Override
