@@ -1,5 +1,5 @@
 // part 4 implementing linked list using guidence from GenAi(Chatgpt)
-
+import java.util.Iterator;
 import java.util.LinkedList;
 
 public class Ride implements Rideinterface {
@@ -148,16 +148,17 @@ public int numberofVisitors(){
 
 @Override
 public void printRideHistory() {
-    // part 4 implementation
     System.out.println("List of previous riders for " + rideName + ":");
     if (rideHistory.isEmpty()) {
-        System.out.println("Currently, no visitor history for this ride.");
+        System.out.println("Currently no visitor history for this ride.");
     } else {
+        Iterator<Visitor> iterator = rideHistory.iterator();
         int index = 1;
-        for (Visitor visitor : rideHistory) {
-            System.out.println("Visitor " + index++ + ": " + visitor.getName());
+        while (iterator.hasNext()) {
+            Visitor visitor = iterator.next();
+            System.out.println("Visitor " + index + ": " + visitor.getName());
+            index++;
+            }
         }
-    }
+    }    
 }
-}    
-
