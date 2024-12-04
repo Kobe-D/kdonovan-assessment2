@@ -52,11 +52,11 @@ Visitor v008 = new Visitor("Jotaro Kujo", "4785245654", "Male", false, false, tr
 Visitor v009 = new Visitor("Jessica Rabbit", "098527368", "Female", false, false, false, "T0009");
 
 // add visitors to history of ride
-ride2.addVisitortoQueue(v009);
-ride2.addVisitortoQueue(v008);
-ride2.addVisitortoQueue(v007);
-ride2.addVisitortoQueue(v006);
-ride2.addVisitortoQueue(v005);
+ride2.addVisitorToHistory(v009);
+ride2.addVisitorToHistory(v008);
+ride2.addVisitorToHistory(v007);
+ride2.addVisitorToHistory(v006);
+ride2.addVisitorToHistory(v005);
 
 // check for specific Visitor is in the rides history 
 System.out.println("Searching for Jessica Rabbit in ride 2 history" + ride2.checkVisitorfromHistory(v009));
@@ -105,5 +105,5 @@ ride3.printRideHistory();
     }
     public void partSeven(){
     }
-    }
+}
     
