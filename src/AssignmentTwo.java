@@ -151,10 +151,10 @@ ride3.printRideHistory();
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
    
     public void partFive(){
-
+        
         Ride ride4 = new Ride("ride 4", null, true, 3); 
         //making employee 
-        Employee op1 = new Employee("David Muar", "0000000", "male", "operator", "E001");
+        
 
 // sett the max amount of visitors who can be on ride at once
 ride4.setMaxRider(4);
