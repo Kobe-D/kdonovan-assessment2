@@ -60,6 +60,7 @@ System.out.println();
 // adding a space and a bar to seperate information to make it clearer in terminal 
 System.out.println();
 System.out.println("=== The current queue for Ride 1 ===");
+System.out.println();
 // pring method 
 ride1.printQueue();
 
