@@ -1,6 +1,6 @@
 
 public class AssignmentTwo {
-    
+
     //CODE BELOW FROM GEN AI IN ATTEMPT TO GET AN ACTUAL OUTPUT 
     public static void main(String[] args) {
         AssignmentTwo assignment = new AssignmentTwo();
@@ -23,7 +23,7 @@ public class AssignmentTwo {
 
     public void partThree(){
     //making new ride
-    Ride ride1 = new Ride("rider 1", null, true, 3); 
+    Ride ride1 = new Ride("ride 1", null, true, 3); 
 
 // creating a list of visitors                         
     Visitor v001 = new Visitor("Tame Impala", "0444444444", "Male", false, true, false, "T0001");
