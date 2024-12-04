@@ -60,13 +60,16 @@ ride2.addVisitortoQueue(v007);
 ride2.addVisitortoQueue(v006);
 ride2.addVisitortoQueue(v005);
 
-// check for specific Visitor is in the collection
+// check for specific Visitor is in the rides history 
 
 System.out.println("Searching for Jessica Rabbit in ride 2 history" + ride2.checkVisitorfromHistory(v009));
 
-// Print the number of Visitors in the collection
+// Print the number of Visitors in the that have visited the ride
 
-//Print all Visitors in the collection. 
+
+
+//Print all Visitors in the ride history 
+
     
     }
     public void partFourB(){
