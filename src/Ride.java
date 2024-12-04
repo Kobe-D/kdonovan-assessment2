@@ -1,7 +1,10 @@
 // part 4 implementing linked list using guidence from GenAi(Chatgpt)
+import java.io.File;
+import java.io.IOException;
 import java.util.Collections;
 import java.util.Iterator;
 import java.util.LinkedList;
+
 
 public class Ride implements Rideinterface {
     private String rideName;
@@ -82,6 +85,39 @@ public void setNumOfCycles(int numOfCycles) {
     this.numOfCycles = numOfCycles;
 }
    
+//part 6 write in csv file
+public void exportRideHistory(String ridehistory) {
+    //creating the new file
+    File file = new File(ridehistory);
+
+    //making sure it doesn't exist so I can make a new one if it doesn't
+    try {
+        if (!file.exists()) {
+            file.createNewFile();
+        }
+
+        // Opening file and writing with try-with-resources
+        try (java.io.FileWriter writer = new java.io.FileWriter(file)) {
+
+            // Adding a header to the file
+            writer.write("Visitor Name, Mobile, Gender, Ticket Number\n");
+
+            // Writing the details of visitors
+            for (Visitor visitor : rideHistory) {
+                writer.write(visitor.getName() + "," + visitor.getMobile() + "," + visitor.getGender() + "," + visitor.getTicknumber() + "\n");
+                // I can't get the boolean (true / false) entries to work and don't have time to implement them
+            }
+
+            System.out.println("Visitor ride history has been exported to " + ridehistory);
+        }
+    } catch (IOException e) {
+        //making a  message incase of a error 
+        System.out.println("Sorry, there was an issue in writing or exporting the file: " + e.getMessage());
+    }
+}
+
+
+
 // adding a print method to print information for ride class
 public void displayInfor(){
     System.out.println(rideName);
