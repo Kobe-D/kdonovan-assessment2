@@ -156,7 +156,8 @@ ride3.printRideHistory();
         //making employee 
         Employee op1 = new Employee("David Muar", "0000000", "male", "operator", "E001");
 
-
+// sett the max amount of visitors who can be on ride at once
+ride4.setMaxRider(4);
 
 
         // creating a list of visitors          
