@@ -120,8 +120,6 @@ public void printQueue(){
         }
     }
 }
-
-
 @Override
 public void runOneCycle() {
 // part 5 implemnation
@@ -136,8 +134,6 @@ public void addVisitorToHistory(Visitor visitor) {
         System.out.println("Sorry history is currently full, addition entries cannot be made at this time " + visitor.getName() + " has failed to be added ");
     }
 }
-
-
 
 @Override
 public boolean checkVisitorfromHistory(Visitor visitor) {

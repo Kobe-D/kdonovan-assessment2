@@ -4,7 +4,7 @@ public class AssignmentTwo {
     }
     public void partThree(){
     //making new ride
-    Ride ride1 = new Ride("Ride 1", null, true, 3);
+    attraction atr1 = new atr("atrraction 1", null, true, 3);
 
 // creating a list of visitors                         
     Visitor v001 = new Visitor("Tame Impala", "0444444444", "Male", false, true, false, "T0001");
@@ -19,23 +19,23 @@ public class AssignmentTwo {
     Visitor v010 = new Visitor("Jade Pirf", "416468314", "Female", true, true, true, "T0010");
     
 // putting visitors in the queue 
-    ride1.addVisitortoQueue(v010);
-    ride1.addVisitortoQueue(v009);
-    ride1.addVisitortoQueue(v008);
-    ride1.addVisitortoQueue(v007);
-    ride1.addVisitortoQueue(v006);
-    ride1.addVisitortoQueue(v005);
-    ride1.addVisitortoQueue(v004);
-    ride1.addVisitortoQueue(v003);
-    ride1.addVisitortoQueue(v002);
-    ride1.addVisitortoQueue(v001);
+atr1.addVisitortoQueue(v010);
+atr1.addVisitortoQueue(v009);
+atr1.addVisitortoQueue(v008);
+atr1.addVisitortoQueue(v007);
+atr1.addVisitortoQueue(v006);
+atr1.addVisitortoQueue(v005);
+atr1.addVisitortoQueue(v004);
+atr1.addVisitortoQueue(v003);
+atr1.addVisitortoQueue(v002);
+atr1.addVisitortoQueue(v001);
 //removing from queue
-    ride1.removeVisitorfromQueue(v005);
-    ride1.removeVisitorfromQueue(v008);
-    ride1.removeVisitorfromQueue(v001);
+atr1.removeVisitorfromQueue(v005);
+atr1.removeVisitorfromQueue(v008);
+atr1.removeVisitorfromQueue(v001);
     
 // pring method 
-    ride1.printQueue();
+atr1.printQueue();
 
  }
 
