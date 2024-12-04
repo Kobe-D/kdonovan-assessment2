@@ -1,3 +1,4 @@
+// kobe donovan 24210524
 public abstract class Person {
 //Add at least 3 instance variables suitable for a person
     private String name;

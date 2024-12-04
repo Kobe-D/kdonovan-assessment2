@@ -1,4 +1,4 @@
-
+// kobe donovan 24210524
 public class AssignmentTwo {
 
     //CODE BELOW FROM GEN AI IN ATTEMPT TO GET AN ACTUAL OUTPUT 
@@ -144,7 +144,7 @@ ride3.printRideHistory();
 ride3.sortRideHistory();
 //printing sorted histort
 System.out.println();
-System.out.println("Sorted Visitor histy list: ");
+System.out.println("Sorted Visitor history list: ");
 System.out.println();
 ride3.printRideHistory();
  }
