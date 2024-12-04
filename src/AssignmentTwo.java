@@ -13,9 +13,21 @@ public class AssignmentTwo {
 
         System.out.println("\n=== Part 4B Testing ===");
         assignment.partFourB();
-    }
-// CODE ABOVE FROM GEN AI IN ATTEMP TO GET AN OUTPUT 
 
+
+    
+// CODE ABOVE FROM GEN AI IN ATTEMP TO GET AN OUTPUT 
+        System.out.println("\n=== Part 5 Testing ===");
+        assignment.partFourB();
+
+        System.out.println("\n=== Part 6 Testing ===");
+        assignment.partFourB();
+
+        System.out.println("\n=== Part 7 Testing ===");
+        assignment.partFourB();
+
+
+}
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
     public void partThree(){
@@ -135,11 +147,48 @@ System.out.println();
 System.out.println("Sorted Visitor histy list: ");
 System.out.println();
 ride3.printRideHistory();
-
+ }
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
-    }
+   
     public void partFive(){
+
+        Ride ride4 = new Ride("ride 4", null, true, 3); 
+        //making employee 
+        Employee op1 = new Employee("David Muar", "0000000", "male", "operator", "E001");
+
+
+
+
+        // creating a list of visitors          
+    Visitor v001 = new Visitor("Tame Impala", "0444444444", "Male", false, true, false, "T0001");
+    Visitor v002 = new Visitor("Kurt Cobain", "0477777777", "Male", true, true, false, "T0002");
+    Visitor v003 = new Visitor("Jordan Carter", "066666666", "Male", false, true, true, "T0003");
+    Visitor v004 = new Visitor("Pastel Ghost", "0202020202", "Female", false, true, false, "T0004");
+    Visitor v005 = new Visitor("Pixies", "4545454544", "Male", true, true, false, "T0005");
+    Visitor v006 = new Visitor("Tony Hawk", "46565456163", "Male", false, false, true, "T0006");
+    Visitor v007 = new Visitor("Eric Smith", "741852963", "Male", false, true, true, "T0007");
+    Visitor v008 = new Visitor("Jotaro Kujo", "4785245654", "Male", false, false, true, "T0008");
+    Visitor v009 = new Visitor("Jessica Rabbit", "098527368", "Female", false, false, false, "T0009");
+    Visitor v010 = new Visitor("Jade Pirf", "416468314", "Female", true, true, true, "T0010");
+    
+// putting visitors in the queue 
+    ride4.addVisitortoQueue(v010);
+    ride4.addVisitortoQueue(v009);
+    ride4.addVisitortoQueue(v008);
+    ride4.addVisitortoQueue(v007);
+    ride4.addVisitortoQueue(v006);
+    ride4.addVisitortoQueue(v005);
+    ride4.addVisitortoQueue(v004);
+    ride4.addVisitortoQueue(v003);
+    ride4.addVisitortoQueue(v002);
+    ride4.addVisitortoQueue(v001);
+        
+        
+
+        
+
+
+
     }
     public void partSix(){
     }
