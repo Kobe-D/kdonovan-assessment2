@@ -48,13 +48,17 @@ ride1.addVisitortoQueue(v004);
 ride1.addVisitortoQueue(v003);
 ride1.addVisitortoQueue(v002);
 ride1.addVisitortoQueue(v001);
-// adding a bar to seperate information to make it clearer in terminal 
+// adding a space and a bar to seperate information to make it clearer in terminal 
+System.out.println();
 System.out.println("=== Visitors who have left / been removed from queue ===");
+System.out.println();
 //removing from queue
 ride1.removeVisitorfromQueue(v005);
 ride1.removeVisitorfromQueue(v008);
 ride1.removeVisitorfromQueue(v001);
-// adding a bar to seperate information to make it clearer in terminal 
+System.out.println();
+// adding a space and a bar to seperate information to make it clearer in terminal 
+System.out.println();
 System.out.println("=== The current queue for Ride 1 ===");
 // pring method 
 ride1.printQueue();
