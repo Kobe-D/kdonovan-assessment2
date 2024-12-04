@@ -1,4 +1,7 @@
-//The Ride class is used to track the rides available at the theme park, e.g., roller coaster, water riders, etc.
+// part 4 implementing linked list using guidence from GenAi(Chatgpt)
+
+import java.util.LinkedList;
+
 public class Ride implements Rideinterface {
     private String rideName;
     private Employee operator;
@@ -10,10 +13,8 @@ public class Ride implements Rideinterface {
     private int queueSize;
     private final int maxQueueSize = 56; // setting the max queue size as double what the avg roller coaster rides seat is ( according to asking chatgpt : :"whats the average of how many seats are on a roller coaster" )
 
-//part 3 stating ride history variables
-    private Visitor[] rideHistory;
-    private int historySize;
-
+//part 4 Guidence from GenAI(chatgpt) for linked list
+    private LinkedList<Visitor> rideHistory;
 //constructor   
 public Ride(){
     this.rideName = "ride name";
@@ -30,8 +31,8 @@ public Ride(String rideName, Employee operator, boolean isOpen, int length){
 //part 3 initialise my queues and history  as arrays
     this.queue = new Visitor[maxQueueSize];
     this.queueSize = 0;
-    this.rideHistory = new Visitor[1000];
-    this.historySize = 0;
+    // help with GenAi for part4A
+    this.rideHistory = new LinkedList<>();
 }
 //getters and setters 
 public String getRideName(){
