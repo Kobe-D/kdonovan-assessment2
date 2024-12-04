@@ -66,7 +66,7 @@ System.out.println("Searching for Jessica Rabbit in ride 2 history" + ride2.chec
 
 // Print the number of Visitors in the that have visited the ride
 
-
+System.out.println(" Ride two has had : " + ride2.numberofVisitors() + "many recorded visitors ");
 
 //Print all Visitors in the ride history 
 
