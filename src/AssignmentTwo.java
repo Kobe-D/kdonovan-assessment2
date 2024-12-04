@@ -17,10 +17,7 @@ public class AssignmentTwo {
 // CODE ABOVE FROM GEN AI IN ATTEMP TO GET AN OUTPUT 
 
 
-
-
-
-
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
     public void partThree(){
     //making new ride
     Ride ride1 = new Ride("ride 1", null, true, 3); 
@@ -65,7 +62,7 @@ System.out.println();
 ride1.printQueue();
 
  }
-
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
     public void partFourA(){
 // new ride
 
@@ -90,13 +87,13 @@ System.out.println("=== searching for past visitors ===");
 System.out.println();
 
 // check for specific Visitor is in the rides history 
-System.out.println("Searching for Jessica Rabbit in ride 2 history = " + ride2.checkVisitorfromHistory(v009));
+System.out.println("Searching if Jessica Rabbit has previously been on Ride2 = " + ride2.checkVisitorfromHistory(v009));
 // adding a space and a bar to seperate information to make it clearer in terminal 
 System.out.println();
 System.out.println("=== Amount of past visitors ===");
 System.out.println();
 // Print the number of Visitors in the that have visited the ride
-System.out.println(" Ride two has had : " + ride2.numberofVisitors() + "many recorded visitors ");
+System.out.println(" Ride two has had : *" + ride2.numberofVisitors() + "*  many recorded visitors ");
 // adding a space and a bar to seperate information to make it clearer in terminal 
 System.out.println();
 
@@ -104,6 +101,8 @@ System.out.println();
 ride2.printRideHistory();
     
     }
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
     public void partFourB(){
         Ride ride3 = new Ride("ride 3", null, true, 15); 
 
@@ -135,7 +134,7 @@ ride3.sortRideHistory();
 System.out.println("Sorted Visitor histy list: ");
 ride3.printRideHistory();
 
-
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
     }
     public void partFive(){
