@@ -128,46 +128,36 @@ public void runOneCycle() {
 
 @Override
 public void addVisitorToHistory(Visitor visitor) {
-    if (historySize < rideHistory.length) {
-        rideHistory[historySize++] = visitor;
-        System.out.println(visitor.getName() + " Visitor can now be seen in ride history " );
-    } else {
-        System.out.println("Sorry history is currently full, addition entries cannot be made at this time " + visitor.getName() + " has failed to be added ");
-    }
+    // part 4 implementation
+    rideHistory.add(visitor); 
+    System.out.println(visitor.getName() + " has been added to the ride history.");
 }
 
 @Override
 public boolean checkVisitorfromHistory(Visitor visitor) {
-// part 4 implementation 
-for (int i = 0; i < historySize; i++) {
-    if (rideHistory[i].equals(visitor)){
-// if visitor is found in the history 
-        return true; 
-    }
+    // part 4 implementation
+    return rideHistory.contains(visitor); 
 }
-// if they arnt found in the history 
-return false; 
-}
+
 
 @Override
 public int numberofVisitors(){
 //part 4 implementation 
-    return historySize;
+    return rideHistory.size();
 }
 
 @Override
-public void printRideHistory(){
-// part 4 implementation  // GENAI CHATGPT 
-    System.out.println("List of prevous rider " + rideName + " : ");
-    if ( historySize == 0) {
-        System.out.println("Currentyly no visitor history for this ride");
+public void printRideHistory() {
+    // part 4 implementation
+    System.out.println("List of previous riders for " + rideName + ":");
+    if (rideHistory.isEmpty()) {
+        System.out.println("Currently, no visitor history for this ride.");
     } else {
-        int index = 0;
-while (index < historySize) {
-    System.out.println("Visitor " + (index + 1) + ": " + rideHistory[index].getName());
-    index++;
-            }
-        }      
+        int index = 1;
+        for (Visitor visitor : rideHistory) {
+            System.out.println("Visitor " + index++ + ": " + visitor.getName());
+        }
     }
+}
 }    
 

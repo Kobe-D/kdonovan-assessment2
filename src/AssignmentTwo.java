@@ -40,6 +40,9 @@ ride1.printQueue();
  }
 
     public void partFourA(){
+    
+
+    
     }
     public void partFourB(){
     }
