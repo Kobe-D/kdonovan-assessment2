@@ -1,4 +1,5 @@
 // part 4 implementing linked list using guidence from GenAi(Chatgpt)
+import java.util.Collections;
 import java.util.Iterator;
 import java.util.LinkedList;
 
@@ -161,5 +162,15 @@ public void printRideHistory() {
             index++;
             }
         }
-    }    
+    }  
+    
+//part 4B 
+public void sortRideHistory() {
+    Collections.sort(rideHistory, new VisitorComparator());
+    System.out.println("Ride history has been sorted.");
+    } 
+
+
+
+    
 }

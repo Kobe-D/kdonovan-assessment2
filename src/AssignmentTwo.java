@@ -69,6 +69,35 @@ ride2.printRideHistory();
     
     }
     public void partFourB(){
+        Ride ride3 = Ride("ride 3", null, true, 15); 
+
+        Visitor v001 = new Visitor("Tame Impala", "0444444444", "Male", false, true, false, "T0001");
+        Visitor v002 = new Visitor("Kurt Cobain", "0477777777", "Male", true, true, false, "T0002");
+        Visitor v003 = new Visitor("Jordan Carter", "066666666", "Male", false, true, true, "T0003"); 
+        Visitor v008 = new Visitor("Jotaro Kujo", "4785245654", "Male", false, false, true, "T0008");
+        Visitor v009 = new Visitor("Jessica Rabbit", "098527368", "Female", false, false, false, "T0009");
+        Visitor v010 = new Visitor("Jade Pirf", "416468314", "Female", true, true, true, "T0010");
+
+// add visitors
+        ride3.addVisitortoQueue(v010);
+        ride3.addVisitortoQueue(v009);
+        ride3.addVisitortoQueue(v008);
+        ride3.addVisitortoQueue(v003);
+        ride3.addVisitortoQueue(v002);
+        ride3.addVisitortoQueue(v001);
+
+// print history before sorting 
+System.out.println("Visitor list before sorting: ");
+ride3.printRideHistory();
+
+// sorting visitor history 
+ride3.sortRideHistory();
+//printing sorted histort
+System.out.println("Sorted Visitor histy list: ");
+ride3.printRideHistory();
+
+
+
     }
     public void partFive(){
     }
