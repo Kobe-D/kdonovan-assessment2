@@ -18,13 +18,13 @@ public class AssignmentTwo {
     
 // CODE ABOVE FROM GEN AI IN ATTEMP TO GET AN OUTPUT 
         System.out.println("\n=== Part 5 Testing ===");
-        assignment.partFourB();
+        assignment.partFive();
 
         System.out.println("\n=== Part 6 Testing ===");
-        assignment.partFourB();
+        assignment.partSix();
 
         System.out.println("\n=== Part 7 Testing ===");
-        assignment.partFourB();
+        assignment.partSeven();
 
 
 }
@@ -208,7 +208,33 @@ ride4.printRideHistory();
 
 
     public void partSix(){
-    }
+        Ride ride5 = new Ride("ride 5", null, true, 3); 
+    //adding visitors
+    Visitor v001 = new Visitor("Tame Impala", "0444444444", "Male", false, true, false, "T0001");
+    Visitor v002 = new Visitor("Kurt Cobain", "0477777777", "Male", true, true, false, "T0002");
+    Visitor v003 = new Visitor("Jordan Carter", "066666666", "Male", false, true, true, "T0003");
+    Visitor v004 = new Visitor("Pastel Ghost", "0202020202", "Female", false, true, false, "T0004");
+    Visitor v005 = new Visitor("Pixies", "4545454544", "Male", true, true, false, "T0005");
+
+    ride5.addVisitorToHistory(v005);
+    ride5.addVisitorToHistory(v004);
+    ride5.addVisitorToHistory(v003);
+    ride5.addVisitorToHistory(v002);
+    ride5.addVisitorToHistory(v001);
+
+// export the the info to the file
+String filePath = "C:\\Users\\61476\\OneDrive - Southern Cross University\\object orintated programing\\kdonovan-A2\\kdonovan-ass2\\exports\\ride_history.csv";
+ride5.exportRideHistory(filePath);
+//conformation message 
+System.out.println(" ride history of visitors successefully uploaded to  " + filePath);
+
+ }
+
+
+
+
+
+
     public void partSeven(){
     }
 }
