@@ -1,7 +1,26 @@
 
 public class AssignmentTwo {
+    
+    //CODE BELOW FROM GEN AI IN ATTEMPT TO GET AN ACTUAL OUTPUT 
     public static void main(String[] args) {
+        AssignmentTwo assignment = new AssignmentTwo();
+
+        System.out.println("=== Part 3 Testing ===");
+        assignment.partThree();
+
+        System.out.println("\n=== Part 4A Testing ===");
+        assignment.partFourA();
+
+        System.out.println("\n=== Part 4B Testing ===");
+        assignment.partFourB();
     }
+// CODE ABOVE FROM GEN AI IN ATTEMP TO GET AN OUTPUT 
+
+
+
+
+
+
     public void partThree(){
     //making new ride
     Ride ride1 = new Ride("rider 1", null, true, 3); 
