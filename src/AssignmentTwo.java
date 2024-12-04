@@ -183,14 +183,30 @@ ride4.setMaxRider(4);
     ride4.addVisitortoQueue(v003);
     ride4.addVisitortoQueue(v002);
     ride4.addVisitortoQueue(v001);
-        
-        
+// list visitors in the queue before running a cycle
+System.out.println();
+System.out.println("=== Visitors in the Queue Before Running Cycle ==");
+ride4.printQueue();
+System.out.println();
+//run a cycle
+System.out.println("The ride is about to begin ");
+ride4.runOneCycle();      
+System.out.println("The ride has completed a cycle");
+System.out.println();
 
-        
+// print remaining visitors in the queue
+System.out.println("  The remaining queue : ");
+ride4.printQueue();
+System.out.println();
+
+// print ride history 
+
+System.out.println("Ride4's visitor history:");
+ride4.printRideHistory();
+
+}
 
 
-
-    }
     public void partSix(){
     }
     public void partSeven(){
