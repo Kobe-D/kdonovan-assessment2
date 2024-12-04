@@ -156,15 +156,17 @@ public int numberofVisitors(){
 
 @Override
 public void printRideHistory(){
-// part 4 implementation 
+// part 4 implementation  // GENAI CHATGPT 
     System.out.println("List of prevous rider " + rideName + " : ");
     if ( historySize == 0) {
         System.out.println("Currentyly no visitor history for this ride");
     } else {
-        for (int i = 0; i < historySize; i++) {
-            System.out.println("Visitor " + (i + 1) + rideHistory[i].getName());
-        }
+        int index = 0;
+while (index < historySize) {
+    System.out.println("Visitor " + (index + 1) + ": " + rideHistory[index].getName());
+    index++;
+            }
+        }      
     }
-}
+}    
 
-}
