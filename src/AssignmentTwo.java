@@ -79,12 +79,12 @@ ride2.printRideHistory();
         Visitor v010 = new Visitor("Jade Pirf", "416468314", "Female", true, true, true, "T0010");
 
 // add visitors
-        ride3.addVisitortoQueue(v010);
-        ride3.addVisitortoQueue(v009);
-        ride3.addVisitortoQueue(v008);
-        ride3.addVisitortoQueue(v003);
-        ride3.addVisitortoQueue(v002);
-        ride3.addVisitortoQueue(v001);
+        ride3.addVisitorToHistory(v010);
+        ride3.addVisitorToHistory(v009);
+        ride3.addVisitorToHistory(v008);
+        ride3.addVisitorToHistory(v003);
+        ride3.addVisitorToHistory(v002);
+        ride3.addVisitorToHistory(v001);
 
 // print history before sorting 
 System.out.println("Visitor list before sorting: ");
