@@ -51,9 +51,7 @@ Visitor v007 = new Visitor("Eric Smith", "741852963", "Male", false, true, true,
 Visitor v008 = new Visitor("Jotaro Kujo", "4785245654", "Male", false, false, true, "T0008");
 Visitor v009 = new Visitor("Jessica Rabbit", "098527368", "Female", false, false, false, "T0009");
 
-
 // add visitors to history of ride
-
 ride2.addVisitortoQueue(v009);
 ride2.addVisitortoQueue(v008);
 ride2.addVisitortoQueue(v007);
@@ -61,15 +59,13 @@ ride2.addVisitortoQueue(v006);
 ride2.addVisitortoQueue(v005);
 
 // check for specific Visitor is in the rides history 
-
 System.out.println("Searching for Jessica Rabbit in ride 2 history" + ride2.checkVisitorfromHistory(v009));
 
 // Print the number of Visitors in the that have visited the ride
-
 System.out.println(" Ride two has had : " + ride2.numberofVisitors() + "many recorded visitors ");
 
 //Print all Visitors in the ride history 
-
+ride2.printRideHistory();
     
     }
     public void partFourB(){
