@@ -84,12 +84,21 @@ ride2.addVisitorToHistory(v008);
 ride2.addVisitorToHistory(v007);
 ride2.addVisitorToHistory(v006);
 ride2.addVisitorToHistory(v005);
+// adding a space and a bar to seperate information to make it clearer in terminal 
+System.out.println();
+System.out.println("=== searching for past visitors ===");
+System.out.println();
 
 // check for specific Visitor is in the rides history 
-System.out.println("Searching for Jessica Rabbit in ride 2 history" + ride2.checkVisitorfromHistory(v009));
-
+System.out.println("Searching for Jessica Rabbit in ride 2 history = " + ride2.checkVisitorfromHistory(v009));
+// adding a space and a bar to seperate information to make it clearer in terminal 
+System.out.println();
+System.out.println("=== Amount of past visitors ===");
+System.out.println();
 // Print the number of Visitors in the that have visited the ride
 System.out.println(" Ride two has had : " + ride2.numberofVisitors() + "many recorded visitors ");
+// adding a space and a bar to seperate information to make it clearer in terminal 
+System.out.println();
 
 //Print all Visitors in the ride history 
 ride2.printRideHistory();
@@ -112,7 +121,10 @@ ride2.printRideHistory();
         ride3.addVisitorToHistory(v003);
         ride3.addVisitorToHistory(v002);
         ride3.addVisitorToHistory(v001);
-
+// adding a space and a bar to seperate information to make it clearer in terminal 
+System.out.println();
+System.out.println("=== Visitors who have been added to the ride visitation history ===");
+System.out.println();
 // print history before sorting 
 System.out.println("Visitor list before sorting: ");
 ride3.printRideHistory();
