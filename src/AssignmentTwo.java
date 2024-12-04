@@ -69,7 +69,7 @@ ride2.printRideHistory();
     
     }
     public void partFourB(){
-        Ride ride3 = Ride("ride 3", null, true, 15); 
+        Ride ride3 = new Ride("ride 3", null, true, 15); 
 
         Visitor v001 = new Visitor("Tame Impala", "0444444444", "Male", false, true, false, "T0001");
         Visitor v002 = new Visitor("Kurt Cobain", "0477777777", "Male", true, true, false, "T0002");
